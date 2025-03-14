@@ -1,3 +1,4 @@
 /home/samuel/practicas/build/CMakeFiles/practica_string.dir
+/home/samuel/practicas/build/CMakeFiles/AddStrings.dir
 /home/samuel/practicas/build/CMakeFiles/edit_cache.dir
 /home/samuel/practicas/build/CMakeFiles/rebuild_cache.dir

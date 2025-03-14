@@ -129,6 +129,19 @@ practica_string/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/practica_string.dir/build.make CMakeFiles/practica_string.dir/build
 .PHONY : practica_string/fast
 
+#=============================================================================
+# Target rules for targets named AddStrings
+
+# Build rule for target.
+AddStrings: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 AddStrings
+.PHONY : AddStrings
+
+# fast build rule for target.
+AddStrings/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AddStrings.dir/build.make CMakeFiles/AddStrings.dir/build
+.PHONY : AddStrings/fast
+
 Callbacks.o: Callbacks.cpp.o
 .PHONY : Callbacks.o
 
@@ -153,6 +166,30 @@ Callbacks.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/practica_string.dir/build.make CMakeFiles/practica_string.dir/Callbacks.cpp.s
 .PHONY : Callbacks.cpp.s
 
+add_strings.o: add_strings.cpp.o
+.PHONY : add_strings.o
+
+# target to build an object file
+add_strings.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AddStrings.dir/build.make CMakeFiles/AddStrings.dir/add_strings.cpp.o
+.PHONY : add_strings.cpp.o
+
+add_strings.i: add_strings.cpp.i
+.PHONY : add_strings.i
+
+# target to preprocess a source file
+add_strings.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AddStrings.dir/build.make CMakeFiles/AddStrings.dir/add_strings.cpp.i
+.PHONY : add_strings.cpp.i
+
+add_strings.s: add_strings.cpp.s
+.PHONY : add_strings.s
+
+# target to generate assembly for a file
+add_strings.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AddStrings.dir/build.make CMakeFiles/AddStrings.dir/add_strings.cpp.s
+.PHONY : add_strings.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -161,10 +198,14 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... AddStrings"
 	@echo "... practica_string"
 	@echo "... Callbacks.o"
 	@echo "... Callbacks.i"
 	@echo "... Callbacks.s"
+	@echo "... add_strings.o"
+	@echo "... add_strings.i"
+	@echo "... add_strings.s"
 .PHONY : help
 
 

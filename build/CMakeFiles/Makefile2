@@ -64,6 +64,7 @@ CMAKE_BINARY_DIR = /home/samuel/practicas/build
 
 # The main recursive "all" target.
 all: CMakeFiles/practica_string.dir/all
+all: CMakeFiles/AddStrings.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -72,6 +73,7 @@ preinstall:
 
 # The main recursive "clean" target.
 clean: CMakeFiles/practica_string.dir/clean
+clean: CMakeFiles/AddStrings.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -81,7 +83,7 @@ clean: CMakeFiles/practica_string.dir/clean
 CMakeFiles/practica_string.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/practica_string.dir/build.make CMakeFiles/practica_string.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/practica_string.dir/build.make CMakeFiles/practica_string.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/samuel/practicas/build/CMakeFiles --progress-num=1,2 "Built target practica_string"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/samuel/practicas/build/CMakeFiles --progress-num=3,4 "Built target practica_string"
 .PHONY : CMakeFiles/practica_string.dir/all
 
 # Build rule for subdir invocation for target.
@@ -99,6 +101,32 @@ practica_string: CMakeFiles/practica_string.dir/rule
 CMakeFiles/practica_string.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/practica_string.dir/build.make CMakeFiles/practica_string.dir/clean
 .PHONY : CMakeFiles/practica_string.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/AddStrings.dir
+
+# All Build rule for target.
+CMakeFiles/AddStrings.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AddStrings.dir/build.make CMakeFiles/AddStrings.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AddStrings.dir/build.make CMakeFiles/AddStrings.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/samuel/practicas/build/CMakeFiles --progress-num=1,2 "Built target AddStrings"
+.PHONY : CMakeFiles/AddStrings.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/AddStrings.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/samuel/practicas/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/AddStrings.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/samuel/practicas/build/CMakeFiles 0
+.PHONY : CMakeFiles/AddStrings.dir/rule
+
+# Convenience name for target.
+AddStrings: CMakeFiles/AddStrings.dir/rule
+.PHONY : AddStrings
+
+# clean rule for target.
+CMakeFiles/AddStrings.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AddStrings.dir/build.make CMakeFiles/AddStrings.dir/clean
+.PHONY : CMakeFiles/AddStrings.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
